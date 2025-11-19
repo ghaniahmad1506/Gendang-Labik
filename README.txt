@@ -1,0 +1,1 @@
+Place your bass.wav and snare.wav files here.
