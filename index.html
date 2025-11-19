@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gendang Labek Interactive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Gendang Labek Interactive</h1>
+      <p class="subtitle">
+        Tap or click the pads to play. Use keyboard:
+        <span class="key-label">B</span> = Bass,
+        <span class="key-label">S</span> = Snare.
+      </p>
+    </header>
+
+    <main>
+      <div class="drum-wrapper">
+        <div class="drum-body">
+          <div class="drum-skin">
+            <div class="pad pad-bass" data-sound="bass">
+              <span>Bass</span>
+            </div>
+            <div class="pad pad-snare" data-sound="snare">
+              <span>Snare</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Gendang style inspired by drums used with gamelan (labek).</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

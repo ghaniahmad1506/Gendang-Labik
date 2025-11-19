@@ -1,0 +1,118 @@
+/* Basic reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: radial-gradient(circle at top, #fdf6e3, #e0d3b8);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  max-width: 900px;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.key-label {
+  display: inline-block;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.1rem 0.3rem;
+  font-family: monospace;
+  font-size: 0.85rem;
+  background: #f8f8f8;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.drum-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drum-body {
+  width: min(90vw, 420px);
+  height: min(90vw, 260px);
+  background: linear-gradient(135deg, #b77b4a, #8a5a30);
+  border-radius: 999px;
+  padding: 0.75rem;
+  position: relative;
+}
+
+.drum-skin {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top, #fdf7e9, #e8dbc3);
+  border-radius: inherit;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pad {
+  width: 40%;
+  max-width: 160px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.07s ease, box-shadow 0.07s ease;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3);
+}
+
+.pad span {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pad-bass {
+  background: radial-gradient(circle at 30% 20%, #fef5e7, #d9b98a);
+}
+
+.pad-snare {
+  background: radial-gradient(circle at 30% 20%, #f6f3ff, #c4b0de);
+}
+
+.pad:active,
+.pad.active {
+  transform: scale(0.97);
+}
+
+footer {
+  margin-top: 1.4rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+}
